@@ -1,6 +1,7 @@
-FROM pandoc/latex:2.11.4
+FROM pandoc/latex:2.13
 
-RUN tlmgr update --self
-RUN tlmgr install luatexja haranoaji selnolig
+RUN tlmgr update --self && tlmgr install luatexja haranoaji selnolig
 
-ENTRYPOINT [ "/data/build.sh" ]
+COPY ./build.sh /build.sh
+
+ENTRYPOINT [ "/build.sh" ]
