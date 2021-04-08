@@ -7,6 +7,6 @@ report-builder
 ## Usage
 
 ```sh
-docker run --rm --volume "$(pwd):/data" ghcr.io/azarashi2931/report-pandoc:latest source.md
+docker run --rm --volume "$(pwd):/data" ghcr.io/azarashi2931/report-pandoc:latest /data/path-to-source.md
 ```
 
