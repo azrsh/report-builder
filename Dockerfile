@@ -1,4 +1,4 @@
-FROM pandoc/latex:2.16
+FROM pandoc/latex:2.17
 
 RUN tlmgr update --self && tlmgr install luatexja haranoaji selnolig bussproofs
 
