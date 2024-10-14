@@ -1,4 +1,4 @@
-FROM pandoc/latex@sha256:bea599351bb3ccaf33d5edd22a243b5e72b9c72674b4d7e180f2a9fdce48db08
+FROM pandoc/latex@sha256:862cdb9b8020ef12ae8edb0928d458fe91ef437c7c9d297d8bb5720a4df90fb5
 
 RUN tlmgr update --self && tlmgr install luatexja haranoaji selnolig bussproofs
 
